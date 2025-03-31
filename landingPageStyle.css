@@ -1,0 +1,91 @@
+body {
+    background-color: #021526;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+    margin-top: 29px;
+}
+
+.nav-button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    background: #c2d6f6;
+    color: #03346E;
+    border: 2px solid #03346E;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+.nav-button:hover {
+    background: #03346E;
+    color: #c2d6f6;
+    transform: scale(1.05);
+}
+
+
+/* Introduction Text */
+.intro-text {
+    font-family: Verdana, sans-serif;
+    color: white;
+    text-indent: 46px;
+    text-align: justify;
+    border: 2px solid rgba(255, 255, 255, 0.5); 
+    border-radius: 20px; 
+    padding: 20px; 
+    background-color: rgba(65, 62, 98, 0.279); 
+    margin-top: 150px; 
+    margin-right: 96px;
+    margin-left: 96px;
+    font-size: 2rem;
+    text-align: justify;
+}
+
+/* Section Styling */
+section {
+    padding: 50px;
+    margin: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #03346E;
+}
+
+.logo {
+    width: 200px; /* Make the image small */
+    height: auto;
+    border-radius: 10px;
+    position: absolute; /* Allows positioning with top and left */
+    top: 10px; /* Aligns with the buttons' top position */
+    left: 10px; /* Adds some padding from the left edge */
+    z-index: 1; /* Ensures it stays above other elements if needed */
+}
+
+.header-wrapper {
+    position: relative;
+    height: 100px; /* Adjust height based on your logo size */
+    margin-bottom: 20px; /* Adds space between header and main content */
+}
+

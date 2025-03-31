@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="landingPageStyle.css">
+    <style>
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px; /* Space between video and image */
+            margin-top: 40px;
+        }
+
+        .media-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .clickable-image {
+            width: 420px;
+            height: 320px;
+            cursor: pointer;
+            border: 2px solid #333;
+            border-radius: 8px;
+            margin-top: 33px;
+        }
+
+        .intro-text {
+            text-align: center;
+            margin-top: 90px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <img src="For_integrative_prog/image_2025-03-28_201004358-removebg-preview.png" alt="A logo from Edward" class="logo">
+        <nav class="button-container">
+            <a href="bio.html" class="nav-button">Bio</a> 
+            <a href="Skills.html" class="nav-button">Skills</a>
+            <a href="Resume.html" class="nav-button">Resume</a>
+            <a href="Gallery.html" class="nav-button">Gallery</a>
+            <a href="landingPageMedia.html" class="nav-button">Media</a>
+            <a href="map.html" class="nav-button">Dream Places</a>
+            <a href="bucketlist.html" class="nav-button">Bucket List</a>
+        </nav>
+    </header>
+
+    <p class="intro-text">Hi there, <b><em>I'm Edward Allen</em></b>. Welcome to my page, here you can see and sort through the categories that give info about me. I hope you enjoy your browse here.</p>
+
+    <main class="media-container">
+        <!-- Video Section -->
+        <video width="520" height="420" autoplay="false" controls>
+            <source src="For_integrative_prog/Music_integ/lv_7284243200120818946_20250319135435.mp4" type="video/mp4">
+        </video>
+
+        <!-- Clickable Image Section -->
+        <a href="For_integrative_prog/IMG20241228092504.jpg" target="gallery">
+            <img src="For_integrative_prog/IMG20241228092504.jpg" title="Hello der, mah name iz Edward Allen" alt="Clickable Image" class="clickable-image">
+        </a>
+    </main>
+
+</body>
+</html>

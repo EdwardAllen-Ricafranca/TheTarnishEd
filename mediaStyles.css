@@ -1,0 +1,167 @@
+body {
+    background-color: #021526;
+}
+.content {
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    color: white;
+    text-indent: 46px;
+    margin-top: 46px;
+    margin-bottom: 23px;
+    margin-right: 96px;
+    margin-left: 96px;
+    text-align: justify;
+    border: 3px solid rgba(255, 255, 255, 0.5); 
+    border-radius: 30px; 
+    padding-left: 25px;
+    padding-right: 25px; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(65, 62, 98, 0.279); 
+}
+.content sup {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.section {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 23px;
+    color: #0f141c;
+    border: 2px solid rgba(255, 255, 255, 0.5);  
+    border-width: 11px;
+    background-color: #c2d6f6;
+
+}
+
+h1 {
+    border: 2px solid rgba(255, 255, 255, 0.5); 
+    border-radius: 20px; 
+    padding: 15px; 
+    background-color: rgba(198, 196, 216, 0.438); 
+}
+
+.button-container {
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+    margin-top: 29px;
+}
+
+.nav-button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    background: #c2d6f6;
+    color: #03346E;
+    border: 2px solid #03346E;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+.nav-button:hover {
+    background: #03346E;
+    color: #c2d6f6;
+    transform: scale(1.05);
+}
+
+
+/* For Back to Top and Home Buttons */
+.navigation-buttons-container {
+    position: relative;
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.image-container img {
+    width: 400px; /* Set any width you want */
+    height: 250px; /* Set any height you want */
+    object-fit: cover; /* Crops the image to fit the set dimensions */
+    border-radius: 15px; /* Optional: Rounds corners */
+    display: block; /* Prevents extra space below the image */
+}
+
+
+
+
+.logo {
+    width: 200px; /* Make the image small */
+    height: auto;
+    border-radius: 10px;
+    position: absolute; /* Allows positioning with top and left */
+    top: 10px; /* Aligns with the buttons' top position */
+    left: 10px; /* Adds some padding from the left edge */
+    z-index: 1; /* Ensures it stays above other elements if needed */
+}
+
+.header-wrapper {
+    position: relative;
+    height: 100px; /* Adjust height based on your logo size */
+    margin-bottom: 20px; /* Adds space between header and main content */
+}
+
+
+a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    background: #c2d6f6;
+    color: #03346E;
+    border: 2px solid #03346E;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    display: inline-block;
+}
+
+a:hover {
+    background: #03346E;
+    color: #c2d6f6;
+    transform: scale(1.05);
+}
+
+.media-buttons {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    background: #c2d6f6;
+    color: #03346E;
+    border: 2px solid #03346E;
+    padding: 10px 20px;
+    font-size: 50px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.media-buttons:hover {
+    background: #03346E;
+    color: #c2d6f6;
+    transform: scale(1.05);
+}
+
+.media-container {
+    display: flex;
+    justify-content: center; /* Aligns buttons to the right */
+    gap: 29px; /* Keeps the gap between buttons */
+    margin-top: 10px;
+}

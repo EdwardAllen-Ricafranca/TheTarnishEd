@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    background-color: #021526;
+}
+
+h1 {
+    border: 2px solid rgba(255, 255, 255, 0.5); 
+    border-radius: 20px; 
+    padding: 15px; 
+    background-color: rgba(69, 67, 91, 0.279); 
+}
+
+/* Photo Gallery Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 images per row */
+    gap: 15px; /* Space between images */
+    padding: 20px;
+    justify-content: center;
+}
+
+.photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.photo img {
+    width: 100%;
+    height: 200px; /* Set fixed height for uniformity */
+    object-fit: cover; /* Crops image to fit */
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect: Show Description */
+.photo .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* When user hovers, show overlay and enlarge image */
+.photo:hover img {
+    transform: scale(1.1);
+}
+
+.photo:hover .overlay {
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .gallery {
+        grid-template-columns: repeat(4, 1fr); /* 4 images per row */
+    }
+}
+
+@media (max-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+    }
+}
+
+@media (max-width: 400px) {
+    .gallery {
+        grid-template-columns: repeat(1, 1fr); /* 1 image per row */
+    }
+}
+
+/* Navigation Buttons */
+.button-container {
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+    margin-top: 29px;
+}
+
+.nav-button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    background: #c2d6f6;
+    color: #03346E;
+    border: 2px solid #03346E;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+.nav-button:hover {
+    background: #03346E;
+    color: #c2d6f6;
+    transform: scale(1.05);
+}
+
+.logo {
+    width: 200px; /* Make the image small */
+    height: auto;
+    border-radius: 10px;
+    position: absolute; /* Allows positioning with top and left */
+    top: 10px; /* Aligns with the buttons' top position */
+    left: 10px; /* Adds some padding from the left edge */
+    z-index: 1; /* Ensures it stays above other elements if needed */
+}
+
+.header-wrapper {
+    position: relative;
+    height: 100px; /* Adjust height based on your logo size */
+    margin-bottom: 20px; /* Adds space between header and main content */
+}
+
+

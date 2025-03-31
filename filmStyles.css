@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #021526;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.5); 
+    border-radius: 20px; 
+    padding: 15px; 
+    background-color: rgba(198, 196, 216, 0.438); 
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    color: #FFFFFF;
+    font-style: italic;
+    border: 2px solid rgba(255, 255, 255, 0.5); 
+    border-radius: 20px; 
+    padding: 15px; 
+    background-color: rgba(207, 206, 223, 0.5); 
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 14px 0;
+    color: white;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+body {
+    background-color: #021526;
+}
+
+p {
+    font-style: italic;
+    font-size: 19px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.8;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+    margin-top: 29px;
+}
+
+.nav-button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    background: #c2d6f6;
+    color: #03346E;
+    border: 2px solid #03346E;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+.nav-button:hover {
+    background: #03346E;
+    color: #c2d6f6;
+    transform: scale(1.05);
+}
+
+.section-nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.section-nav-button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    background: #c2d6f6;
+    color: #03346E;
+    border: 2px solid #03346E;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    text-align: right;
+}
+
+.section-nav-button:hover {
+    background: #03346E;
+    color: #c2d6f6;
+    transform: scale(1.05);
+}
+
+/* For Back to Top and Home Buttons */
+.navigation-buttons-container {
+    position: relative;
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.navigation-button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    background: #c2d6f6;
+    color: #03346E;
+    border: 2px solid #03346E;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.navigation-button:hover {
+    background: #03346E;
+    color: #c2d6f6;
+    transform: scale(1.05);
+}
+
+/* Prevents overlap with top buttons */
+header {
+    position: relative;
+    z-index: 2;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.image-container img {
+    width: 400px; /* Set any width you want */
+    height: 250px; /* Set any height you want */
+    object-fit: cover; /* Crops the image to fit the set dimensions */
+    border-radius: 15px; /* Optional: Rounds corners */
+    display: block; /* Prevents extra space below the image */
+}
+
+
+
+
+.logo {
+    width: 200px; /* Make the image small */
+    height: auto;
+    border-radius: 10px;
+    position: absolute; /* Allows positioning with top and left */
+    top: 10px; /* Aligns with the buttons' top position */
+    left: 10px; /* Adds some padding from the left edge */
+    z-index: 1; /* Ensures it stays above other elements if needed */
+}
+
+.header-wrapper {
+    position: relative;
+    height: 100px; /* Adjust height based on your logo size */
+    margin-bottom: 20px; /* Adds space between header and main content */
+}
+
+.section-nav-container {
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.section-nav-button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    background: #c2d6f6;
+    color: #03346E;
+    border: 2px solid #03346E;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+.section-nav-button:hover {
+    background: #03346E;
+    color: #c2d6f6;
+    transform: scale(1.05);
+}
+
+li {
+    font-size: 19px;
+}
